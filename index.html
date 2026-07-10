@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nosso Tempo 🌸</title>
+
+  <!-- Ícone de flor -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Corações subindo ao fundo -->
+  <div id="hearts"></div>
+
+  <main class="phone">
+
+    <!-- Foto no estilo polaroide -->
+    <figure class="polaroid">
+      <div class="frame">
+        <img id="coverImg" src="assets/foto.jpg" alt="Ester e Davi">
+        <div class="placeholder" id="coverPlaceholder">
+          <span class="ico">&#128247;</span>
+          Sua foto aqui
+        </div>
+      </div>
+      <figcaption class="caption">Ester &amp; Davi &#10084;</figcaption>
+    </figure>
+
+    <!-- Contador: cada informação dentro de um card semitransparente -->
+    <section class="counter">
+      <div class="cards">
+        <div class="card">
+          <div class="value" id="vDias">--</div>
+          <div class="label">dias</div>
+        </div>
+        <div class="card">
+          <div class="value" id="vHoras">--</div>
+          <div class="label">horas</div>
+        </div>
+        <div class="card">
+          <div class="value" id="vMin">--</div>
+          <div class="label">min</div>
+        </div>
+        <div class="card">
+          <div class="value" id="vSeg">--</div>
+          <div class="label">seg</div>
+        </div>
+      </div>
+
+      <div class="card card--names">
+        <div class="sub">Ester and Davi <span class="hbeat">&#10084;</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Tela inicial -->
+  <div id="enter">
+    <div class="msg">Clique para come&ccedil;ar</div>
+  </div>
+
+  <!-- Música -->
+  <audio id="audio" loop src="assets/musica.mp3"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
